@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            font-family:'Courier New', Courier, monospace;
+            background-image: url('back.jpeg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        h2{
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+        }
+        .clock{
+            display: flex;
+        }
+        .clock div{
+            margin: 5px;
+        }
+        .clock span{
+            width: 100;
+            height: 80px;
+            background-color: blue;
+            opacity: 80%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+        }
+        .clock .text{
+            height: 30px;
+            font-size: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: darkblue;
+            opacity: 0.8 ;
+        }
+        .clock #ampm{
+          bottom: 0;
+          /* position: absolute; */
+          width: 60px;
+          height: 30px;
+          font-size: 20px;
+          background: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Digital Clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+
+        <div>
+            <span id="ampm">AM</span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="clock.js"></script>
+    
+</body>
+</html>
